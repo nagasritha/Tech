@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a2ddb56b63.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div>
+           <p class="download" id="elementToRemove"><i class="fa-solid fa-file-arrow-down"></i> Download the <span style='color:red;font-weight:bold'>amber</span> app <button id="cancel" onclick="remove()"><i class="fa-regular fa-xmark color-white"></i></button></p>
+           <div class="section1" id="section1">
+                <nav id="nav" style="position:fixed" class="nav color-white d-sm-none d-lg-flex">
+                   <div class="d-flex">
+                    <h1 class="logo-size">amber</h1>
+                    <div id="search" class="d-none">
+                        <div class="d-flex flex-row nav-searchbox">
+                            <input placeholder="Search by city, University, or property" type="text" class="nav-input"/>
+                            <span class="section1-search ml-auto"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+                   </div>
+                    <div class="ml-auto d-sm-none d-xl-flex">
+                        <ul>
+                            <li class="tab">
+                                <i class="fa-regular fa-download"></i> Download App
+                            </li>
+                            <li class="tab">
+                                <i class="fa-regular fa-headset"></i> Support
+                            </li>
+                            <li class="tab">
+                                <i class="fa-regular fa-heart"></i> Shortlist
+                            </li>
+                            <li class="tab-button">
+                                <i class="fa-regular fa-right-to-bracket"></i> Login
+                            </li>
+                            <li class="tab-button">
+                                <i class="fa-solid fa-user"></i> <i class="fa-solid fa-bars"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="section1-content">
+                    <nav class="nav color-white logo-size d-lg-none">
+                        <h1>amber</h1>
+                        <button class="icon-btn"><i class="fa-solid fa-bars  color-white"></i></button>
+                     </nav>
+                    <h1>Home away from home!</h1>
+                <p class="section1-p">Book student accommodations near top universities and cities across the globe.</p>
+                <div class="section1-items">
+                    <div class="section1-item m-2">
+                        <p><span><i class="fa-regular fa-circle-check" style="color:red"></i> </span> Verified Properties</p>
+                    </div>
+                    <div class="section1-item m-2">
+                        <p><span><i class="fa-regular fa-headset" style="color:red"></i> </span> 24x7 Assistance</p>
+                    </div>
+                    <div class="section1-item m-2">
+                        <p><span><i class="fa-regular fa-check-to-slot" style="color:red"></i> </span> Price Match Guarantee</p>
+                    </div>
+                </div>
+               <div class="section1-inputbox d-flex flex-column justify-content-center m-5">
+                    <div class="d-flex flex-row">
+                    <input placeholder="Search by city, University, or property" type="text" class="section1-input"/>
+                    <span class="section1-search ml-auto"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+                </div>
+           </div>
+           <div id="styledElement" class="btn btn-primary" onmouseenter="removeBootstrapClass()">
+            <p>This element has Bootstrap class.</p>
+           
+        </div>
+          <br><br><br><br><br><br>  <br><br><br><br><br><br>  <br><br><br><br><br><br>
+        </div>
+        <script type="text/javascript">
+            function remove(){
+                var element = document.getElementById("elementToRemove");
+                element.parentNode.removeChild(element);
+            }
+            function removeBootstrapClass() {
+                 var element = document.getElementById("nav");
+                // Remove the Bootstrap class
+                element.style.backgroundColor="black";
+                element.classList.add("d-flex");
+                var container = document.getElementById("search");
+    
+                // Create a new element
+                container.classList.add("d-flex");
+
+            }
+        </script>
+    </body>
+</html>
