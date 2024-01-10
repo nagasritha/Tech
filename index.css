@@ -313,17 +313,16 @@ color:white;
     flex-direction:column;
     width:200px;
     height:200px;
+  
     border:1px solid #4b4646;
     border-radius:10px;
     justify-content:center;
     align-items:Center;
 }
+
 .section12{
     display:flex;
     flex-wrap:wrap;
-}
-.section-item{
-    margin:20px;
 }
 .contact{
     width:100%;
@@ -341,4 +340,69 @@ li{
     border-radius:10px;
     min-width:150px;
     max-width:250px;
+}
+.section3-item{
+    border-radius:10px;
+    padding:5px 10px 5px 10px;
+    border:1px solid #878484;
+    font-size:20px;
+    background-color:transparent;
+    display:flex;
+    align-items:Center;
+    font-weight:600;
+    margin:15px;
+}
+.flags{
+width:30px;
+height:30px;
+margin:0px 10px 6px 10px;
+border-radius:30px;
+}
+.section3-contents{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+.section3-content{
+    border-radius:10px;
+    width:250px;
+    height: 250px;
+    display:flex;
+    align-items:flex-end;
+    margin:20px;
+}
+.section3-content:hover{
+    transform: scale(1.2);
+}
+.section3-content-subpara{
+    padding-bottom:15px;
+    background-color:#100f0f;
+    opacity: 0.5;
+    color:white;;
+    font-weight:bold;
+    font-size:20px;
+    width:100%;
+    text-align:center;
+}
+.bg1{
+    background-image:url("https://res.cloudinary.com/dkredoejm/image/upload/v1704859391/london_mn4pzj.png");
+    background-size:cover;
+}
+.bg2{
+    background-image:url("https://res.cloudinary.com/dkredoejm/image/upload/v1704859643/leistar_kqe0du.png");
+    background-size:cover;
+}
+.bg3{
+    background-image:url("https://res.cloudinary.com/dkredoejm/image/upload/v1704859653/bhirmingam_ozqmzd.png");
+    background-size:cover;
+}
+.properties{
+    border-radius:10px;
+    padding:10px;
+    margin:20px;
+    height:30px;
+    display:flex;
+    align-items:Center;
+    background-color:white;
 }
