@@ -85,6 +85,23 @@ document.addEventListener('click', function(event) {
     }
   });
 
+document.addEventListener("click",function(event){
+    if(event.target.classList.contains("properties")) {
+        var id=event.target.id;
+        id=(id+"1");
+        console.log(id);
+        var sliders=document.getElementsByClassName("explore");
+
+        for (var i=0; i<sliders.length; i++){
+            if (sliders[i].id===id){
+                sliders[i].classList.remove("hidden");
+            }
+            else{
+                sliders[i].classList.add("hidden");
+            }
+        }
+    }
+})
 
 
 

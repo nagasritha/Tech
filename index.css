@@ -406,3 +406,33 @@ border-radius:30px;
     align-items:Center;
     background-color:white;
 }
+.slidingItems{
+  
+    background-color:white;
+    border:1px solid #484343;
+    border-radius:10px;
+    margin:20px;
+    width:260px;
+}
+.card-item{
+    border-radius:10px;
+}
+#myCarousel,#myCarousel2,#myCarouse3,#myCarousel4,#myCarouse5,#myCarousel6,#myCarouse7,#myCarousel8,#myCarousel9,#myCarousel10,#myCarouse111,#myCarousel12,#myCarousel13,#myCarousal14,#myCarousel15,#myCarousel16,#myCarousel17,#myCarousel18{
+    width:260px;
+    height: 260px; /* Adjust the height as needed */
+}
+@media(min-width:400px){
+    #myCarousel,#myCarousel2,#myCarouse3,#myCarousel4,#myCarouse5,#myCarousel6,#myCarouse7,#myCarousel8,#myCarousel9,#myCarousel10,#myCarouse111,#myCarousel12,#myCarousel13,#myCarousal14,#myCarousel15,#myCarousel16,#myCarousel17,#myCarousel18{
+        width:400px;
+        height:400px;
+    }
+    .slidingItems{
+        width:400px;
+    }
+}
+.hidden{
+    display:none;
+}
+.n-margin{
+    margin-top:-100px;
+}
